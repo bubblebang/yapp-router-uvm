@@ -28,7 +28,7 @@ A reference model predicts packet forwarding or dropping based on destination an
 | `tb/` | System environment, virtual sequencer, register sequences, and UVM top |
 | `docs/` | Archived topology output |
 
-The environment uses a reference model and per-channel queue scoreboard to verify packet routing. A FIFO-based scoreboard is included as an alternative implementation.
+The environment uses a TLM analysis FIFO scoreboard for packet prediction and comparison. A separate reference model and queue-based scoreboard are included as alternative implementations.
 
 ## Functional Coverage and Assertions
 
